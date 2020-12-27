@@ -1,4 +1,4 @@
-package com.sutaniqbalpc.firstapllication
+package com.tianaadelapratiwi.project_4
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

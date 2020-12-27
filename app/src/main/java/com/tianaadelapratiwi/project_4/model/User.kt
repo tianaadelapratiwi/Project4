@@ -1,4 +1,4 @@
-package com.sutaniqbalpc.firstapllication.model
+package com.tianaadelapratiwi.project_4.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

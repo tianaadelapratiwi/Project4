@@ -4,23 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParcleActivity">
+    tools:context=".ParcelableActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="110dp" />
+        app:layout_constraintGuide_begin="125dp" />
+
     <TextView
         android:id="@+id/lbl_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Nama"
+        android:text="Nama Produk"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
 
 
     <TextView
@@ -30,8 +32,9 @@
         android:layout_marginEnd="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/lbl_nama" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/lbl_nama"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/lbl_email"
@@ -39,9 +42,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Pembelian"
+        android:text="Stok"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_nama" />
+        app:layout_constraintTop_toBottomOf="@+id/lbl_nama"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/lbl_email"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/lbl_age"
@@ -51,28 +66,19 @@
         android:layout_marginTop="16dp"
         android:text="Harga"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_email" />
-
-    <TextView
-        android:id="@+id/txt_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/lbl_email" />
+        app:layout_constraintTop_toBottomOf="@+id/lbl_email"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/txt_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/lbl_age" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/lbl_age"
+        android:layout_marginRight="16dp" />
 
     <Button
         android:id="@+id/btn_back"
@@ -92,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:backgroundTint="#AE0404"
-        android:text="Product With  Parcelable"
+        android:text="Product With Parcelable"
         android:textColor="#FFFFFF"
         app:iconTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -100,5 +106,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="8dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
